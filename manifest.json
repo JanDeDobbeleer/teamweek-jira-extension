@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Jira in Teamweek",
+    "author": "JanJoris",
+    "short_name": "Jira in Teamweek",
+    "description": "Display your Jira ticket status in Teamweek",
+    "homepage_url": "https://herebedragons.io",
+    "version": "1.0.1",
+    "content_scripts": [{
+        "matches": ["*://*.teamweek.com/*"],
+        "css": ["css/template.scss"],
+        "js": ["js/module/jiraApi.js", "js/view/content.js"],
+        "run_at": "document_start"
+    }],
+    "permissions": [
+        "activeTab",
+        "storage",
+        "*://*.atlassian.net/*"
+    ],
+    "options_page": "html/options.html",
+    "background": {
+        "scripts": ["js/view/background.js"],
+        "persistent": true
+    }
+}

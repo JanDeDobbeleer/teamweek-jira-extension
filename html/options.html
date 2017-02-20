@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jira in Teamweek</title>
+    <link rel="stylesheet" href="../css/template.scss" />
+</head>
+
+<body>
+    <h1 class="twj-h1">Jira in Teamweek options</h1>
+    <form id="settingsform">
+        <fieldset>
+            <p>
+                <label class="label" for="id_username" id="id_username_label">Jira Username / Email</label>
+                <input class="input" autofocus="true" id="id_username" name="username" type="text" tabindex="1" />
+            </p>
+            <p>
+                <label class="label" for="id_password" id="id_password_label">Jira Password</label>
+                <input class="input" id="id_password" name="password" type="password" tabindex="2" />
+            </p>
+            <p>
+                <label class="label" for="id_url" id="id_url_label">Jira URL</label>
+                <input class="input" autofocus="false" id="id_url" name="url" type="text" tabindex="3" />
+            </p>
+            <p>
+                <label class="label" for="id_epic_field" id="id_epic_field_label">Jira Epic Link Custom Field ID</label>
+                <input class="input" autofocus="false" id="id_epic_field" name="epic_field" type="text" tabindex="4" />
+            </p>
+            <p>
+                <label class="label" for="id_story_field" id="id_story_field_label">Jira Story Points Custom field ID</label>
+                <input class="input" autofocus="false" id="id_story_field" name="story_field" type="text" tabindex="5" />
+            </p>
+            <p class="action">
+                <input class="input" class="button" id="settings_button" type="submit" value="Submit" tabindex="6" />
+            </p>
+        </fieldset>
+    </form>
+
+    <script src="../js/view/options.js"></script>
+</body>
+
+</html>
